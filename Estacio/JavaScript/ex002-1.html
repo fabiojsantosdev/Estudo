@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Praticando JavaScript - Exercício 1</title>
+    </head>
+    <body>
+        
+    </body>
+    <script type="text/JavaScript">
+          var frutas = ['Laranja', 'Uva', 'Limão'];
+2 
+3 var alunos = []; //array vazio
+4 var alunos = ['Alex', 'Anna', 'João']; // array de strings
+5 var notas = [10.0, 9.5, 9.5]; //array de números decimais
+6 var mistura = ['Um', 2, 3, 'Quatro']; //array de diversos tipos de dados
+7 
+8 
+9 var alunos = new Array();
+10 var alunos = new Array('Alex', 'Anna', 'João');
+11 
+12 var alunos = ['Alex', 'Anna', 'João']; // array de strings
+13 alert(alunos[0]); //exibirá “Alex” na caixa de diálogo
+14 
+15 
+16 alunos.push('Helena');
+17 
+18 
+19 alunos.push('Helena', 'Maria');
+20 
+21 
+22 frutas[frutas.length] = 'Maria';
+23 
+24 
+25 var alunos = ['Alex', 'Anna', 'João'];
+26 alunos.splice(3,0,'Helena');
+27 alert(alunos); //imprimirá 'Alex', 'Anna', 'João', 'Helena'
+28 
+29 
+30 var alunos = ['Alex', 'Anna', 'João'];
+31 alunos.splice(1,1,'Helena');
+32 alert(alunos); //imprimirá 'Alex, 'Helena', 'João'
+33 
+34 delete frutas[0];
+35 
+36 frutas.pop();
+37 
+38 frutas.shift();
+39 
+40 
+41 var primos = [2,3,5,7,11,13,17];
+42 primos.splice(2,2);
+43 alert(primos); //imprimirá 2,3,11,13,17
+44 
+45 
+46 var primos = [2,3,5,7,11,13,17];
+47 alert(primos.length); //imprimirá 7
+48 primos.length = 4;
+49 alert(primos.length); //imprimirá 4
+
+    </script>
+</html>    

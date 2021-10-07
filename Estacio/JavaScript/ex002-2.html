@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Praticando JavaScript - Exercício 2-2</title>
+    </head>
+    <body>
+        <script type="text/JavaScript">
+            var numeros = [];
+
+            numeros[0] = solcitaPrimeiroNumero();
+            numeros[1] = solcitaSegundoNumero();
+
+            var resultadoDivisao = dividir(numeros);
+               alert('O resultado da divisão é igual a: ' + resultadoDivisao);
+
+            /*Função JavaScript - Esta função na recebe parâmetros*/
+            function solcitaPrimeiroNumero() {
+                var numero1 = prompt("Insira o primeiro numero: ");
+
+                if (numero1 < 0){
+                    alert("O número precisa ser inteiro e positivo.");
+                    //Esse tipo de retorno, onde a propria função é chamada novamente, é conhecida como recursividade
+                    return solcitaPrimeiroNumero();
+                }else {
+                    return numero1;
+                }
+            } 
+
+            function solcitaSegundoNumero() {
+                var numero2 = prompt("Insira o Segundo numero: ");
+
+                if (numero2 < 0){
+                    alert("O número precisa ser inteiro e positivo.");
+                    //Esse tipo de retorno, onde a propria função é chamada novamente, é conhecida como recursividade
+                    return solcitaSegundoNumero();
+                }else {
+                    return numero2;
+                }
+            }  
+
+            //Esta função recebe como parâmetro um array - que contém os 2 números que desejamos dividir
+            function dividir(numeros) {
+                var resultado = 0;
+                //Os números a serem divididos são acessados através dos indices do array
+                resultado = numeros[0] / numeros[1];
+                return resultado;
+            } 
+        </script>
+    </body>
+    
+</html>   

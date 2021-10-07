@@ -1,0 +1,9 @@
+Comandos Git
+
+git init  //Cria repositório local
+git clone //Clona repositório do github para maquina local
+git add README.md //Adiciona arquivo no repositório.
+git commit -m "first commit" //Comita alteração feita no repositório.
+git branch -M main //Alterar nome da branch
+git remote add origin https://github.com/m1n31rO/teste.git //Efetua conexão com repositório remoto.
+git push -u origin main //Envia projetos para repositório no GitHub.
