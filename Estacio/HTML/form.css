@@ -68,13 +68,14 @@ fieldset.grupo .campo{
     background: #59429d;
     border: 0;
     margin-bottom: 1em;
+    margin-top: 20px;
     color: #ffffff;
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgb(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgb(0,0,0,0.5);
-    position: absolute;
+    position: relative;
     top: 90%;
-    left: 50%;
+    left: 20%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
